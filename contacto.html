@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto - Javier Salazar</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         HEADER HEREDADO
+    ========================================== -->
+    <header></header>
+
+    <!-- =========================================
+         CONTACTO
+    ========================================== -->
+
+    <main class="contact-hero"
+        style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('recursos/fondo.png');">
+
+        <div class="container-fluid px-lg-5">
+
+            <div class="contact-container">
+
+                <!-- =========================================
+                     FORMULARIO
+                ========================================== -->
+
+                <div class="contact-card form-side">
+
+                    <h3 class="text-center text-lg-start">
+                        Contáctame por correo
+                    </h3>
+
+                    <form id="contactForm">
+
+                        <!-- NOMBRE -->
+                        <div class="input-group">
+
+                            <label for="nombre">
+                                Nombre completo
+                            </label>
+
+                            <input type="text"
+                                id="nombre"
+                                placeholder="Ingresa tu nombre"
+                                required>
+
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="input-group">
+
+                            <label for="email">
+                                Correo electrónico
+                            </label>
+
+                            <input type="email"
+                                id="email"
+                                placeholder="correo@ejemplo.com"
+                                required>
+
+                        </div>
+
+                        <!-- EMPRESA -->
+                        <div class="input-group">
+
+                            <label for="empresa">
+                                Empresa (opcional)
+                            </label>
+
+                            <input type="text"
+                                id="empresa"
+                                placeholder="Nombre de la empresa">
+
+                        </div>
+
+                        <!-- MENSAJE -->
+                        <div class="input-group">
+
+                            <label for="mensaje">
+                                Mensaje
+                            </label>
+
+                            <textarea id="mensaje"
+                                rows="5"
+                                placeholder="Escribe tu mensaje..."
+                                required></textarea>
+
+                        </div>
+
+                        <!-- BOTON -->
+                        <button type="submit" class="btn-send">
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- =========================================
+                     INFORMACIÓN
+                ========================================== -->
+
+                <div class="contact-card info-side">
+
+                    <h3>
+                        Información de contacto
+                    </h3>
+
+                    <!-- EMAIL -->
+                    <div class="info-item">
+
+                        <strong>
+                            Correo electrónico profesional
+                        </strong>
+
+                        <p>
+                            JavierSalazar@JS.com
+                        </p>
+
+                    </div>
+
+                    <!-- UBICACIÓN -->
+                    <div class="info-item">
+
+                        <strong>
+                            Localización
+                        </strong>
+
+                        <p>
+                            Calle 68 #68-68, Localidad de Engativá,
+                            Bogotá D.C
+                        </p>
+
+                    </div>
+
+                    <!-- TELEFONO -->
+                    <div class="info-item">
+
+                        <strong>
+                            Número de teléfono
+                        </strong>
+
+                        <p>
+                            +57 300 000 0000
+                        </p>
+
+                    </div>
+
+                    <!-- REDES -->
+                    <div class="social-section">
+
+                        <p class="mb-3">
+                            Sígueme en redes sociales
+                        </p>
+
+                        <div class="social-icons-contact">
+
+                            <a href="#">
+                                <img src="recursos/git.png" alt="GitHub">
+                            </a>
+
+                            <a href="#">
+                                <img src="recursos/insta.png" alt="Instagram">
+                            </a>
+
+                            <a href="#">
+                                <img src="recursos/face.png" alt="Facebook">
+                            </a>
+
+                            <a href="#">
+                                <img src="recursos/lin.png" alt="LinkedIn">
+                            </a>
+
+                            <a href="#">
+                                <img src="recursos/wat.png" alt="WhatsApp">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- =========================================
+         FOOTER HEREDADO
+    ========================================== -->
+    <footer></footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+
+    <!-- =========================================
+         FORMULARIO
+    ========================================== -->
+
+    <script>
+
+        document
+            .getElementById('contactForm')
+            .addEventListener('submit', function (e) {
+
+                e.preventDefault();
+
+                alert("¡Mensaje enviado correctamente!");
+
+                this.reset();
+
+            });
+
+    </script>
+
+</body>
+
+</html>

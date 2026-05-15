@@ -1,0 +1,1002 @@
+/* =========================================
+   RESET GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================
+   IMÁGENES GLOBALES
+========================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   NAVBAR RESPONSIVE
+========================================= */
+
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 18px 5%;
+    position: relative;
+    z-index: 999;
+}
+
+/* LOGO */
+
+.logo img {
+    height: 55px;
+    width: auto;
+}
+
+/* LINKS */
+
+.nav-links {
+    gap: 15px;
+}
+
+.nav-links .nav-link {
+    color: #fff !important;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+/* HOVER */
+
+.nav-links .nav-link.active,
+.nav-links .nav-link:hover {
+    background: rgba(0, 50, 150, 0.3);
+    border-color: #0055ff;
+    box-shadow: 0 0 15px #0055ff;
+}
+
+/* BOTÓN HAMBURGUESA */
+
+.custom-toggler {
+    border: 1px solid #0055ff !important;
+    box-shadow: none !important;
+}
+
+/* ICONO */
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+
+    .navbar-collapse {
+        flex-grow: 0 !important;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 991px) {
+
+    .custom-navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar-collapse {
+
+        margin-top: 20px;
+
+        background: rgba(0, 0, 0, 0.98);
+
+        border-radius: 20px;
+
+        padding: 20px;
+
+        border: 1px solid #222;
+
+        box-shadow: 0 0 25px rgba(0, 85, 255, 0.25);
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .nav-links .nav-item {
+        width: 100%;
+    }
+
+    .nav-links .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+}
+
+/* MOBILE PEQUEÑO */
+
+@media (max-width: 576px) {
+
+    .logo img {
+        height: 42px;
+    }
+
+    .nav-links .nav-link {
+        font-size: 0.9rem;
+    }
+
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+/* CONTENEDOR */
+
+.hero-container {
+    width: 100%;
+}
+
+/* TEXOS */
+
+.hero-content h1 {
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+}
+
+.hero-content span {
+    font-weight: 300;
+    color: #fff;
+}
+
+/* SUBTÍTULO */
+
+.subtitle {
+    margin: 25px 0;
+    max-width: 650px;
+    color: #d0d0d0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* BOTONES */
+
+.hero-buttons {
+    gap: 15px;
+}
+
+/* BOTÓN PERSONALIZADO */
+
+.custom-btn {
+    padding: 12px 35px !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    color: white !important;
+    border: 1px solid #0055ff !important;
+    background: rgba(0, 85, 255, 0.15);
+    transition: 0.3s;
+    font-weight: 500;
+    box-shadow: 0 0 15px rgba(0, 85, 255, 0.3);
+}
+
+.custom-btn:hover {
+    background: #0055ff;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0, 85, 255, 0.8);
+}
+
+/* =========================================
+   PROFILE CARD
+========================================= */
+
+.profile-card {
+
+    width: 100%;
+    max-width: 420px;
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+    text-align: left;
+}
+
+/* IMAGEN */
+
+.profile-img-container {
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 0 15px rgba(0, 85, 255, 0.8),
+        0 0 35px rgba(0, 85, 255, 0.4);
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+
+.profile-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.profile-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #f0f0f0;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    width: 100%;
+
+    padding: 50px 5% 20px;
+
+    background: #000;
+
+    border-top: 1px solid #222;
+}
+
+/* CONTENEDOR */
+
+.footer-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+/* LINKS */
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.footer-links a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0055ff;
+}
+
+/* LOGO */
+
+.footer-logo img {
+    height: 120px;
+}
+
+/* REDES */
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* ICONOS */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+
+    width: 45px;
+
+    height: 45px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 40px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #222;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.footer-copy-left p,
+.footer-copy-center p {
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   SOBRE MI
+========================================= */
+
+.main-content-sobre {
+    padding: 60px 8%;
+}
+
+/* PERFIL */
+
+.intro-perfil {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+}
+
+.foto-perfil-marco {
+
+    border: 3px solid #0055ff;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    width: 220px;
+
+    height: 320px;
+
+    box-shadow: 0 0 25px rgba(0, 85, 255, 0.5);
+}
+
+.foto-perfil-marco img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.titulo-sobre {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+/* GRID */
+
+.grid-textos {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+/* TARJETAS */
+
+.tarjeta-info {
+
+    background: rgba(40, 40, 40, 0.5);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #333;
+
+    box-shadow: 0 0 30px rgba(130, 0, 255, 0.2);
+
+    line-height: 1.8;
+}
+
+.tarjeta-info.larga {
+    width: 100%;
+}
+
+.tarjeta-info ul {
+    padding-left: 20px;
+}
+
+.tarjeta-info li {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   PORTAFOLIO
+========================================= */
+
+.portfolio-container {
+    padding: 60px 8%;
+}
+
+/* TITULO */
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 10px;
+}
+
+/* LINEA */
+
+.title-underline {
+
+    border: 0;
+
+    height: 2px;
+
+    background: linear-gradient(to right, #0055ff, transparent);
+
+    margin-bottom: 40px;
+}
+
+/* GRID */
+
+.portfolio-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* CARD */
+
+.project-card {
+
+    background: #333;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 60px rgba(0, 85, 255, 0.3);
+}
+
+.project-card:hover {
+
+    box-shadow: 0 0 40px rgba(0, 85, 255, 0.6);
+
+    transform: translateY(-5px);
+}
+
+/* IMAGEN */
+
+.project-image img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+/* INFO */
+
+.project-info {
+
+    padding: 25px;
+
+    background: #888;
+
+    color: #000;
+
+    height: 100%;
+}
+
+.project-info h3 {
+
+    margin-bottom: 12px;
+
+    font-size: 1.2rem;
+}
+
+.project-info p {
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+
+/* =========================================
+   SERVICIOS
+========================================= */
+
+.services-container {
+    padding: 60px 8%;
+}
+
+/* GRID */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+/* CARD */
+
+.service-card {
+
+    background: #333;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 40px rgba(138, 43, 226, 0.4);
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* IMAGEN */
+
+.service-image img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+/* INFO */
+
+.service-info {
+
+    padding: 25px;
+
+    background: #8e8e8e;
+
+    color: #000;
+
+    flex-grow: 1;
+}
+
+.service-info h3 {
+
+    font-size: 1.15rem;
+
+    margin-bottom: 12px;
+}
+
+.service-info p {
+
+    font-size: 0.95rem;
+
+    margin-bottom: 12px;
+
+    line-height: 1.6;
+}
+
+.service-info ul {
+
+    padding-left: 18px;
+
+    margin-top: 10px;
+}
+
+.service-info li {
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contact-hero {
+
+    min-height: 100vh;
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 60px 20px;
+}
+/*container contacto */
+.contact-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+/* FORMULARIO */
+.form-side {
+
+    width: 100%;
+
+    max-width: 720px;
+}
+
+/* TARJETA DERECHA */
+.info-side {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    margin-left: 80px;
+}
+
+@media (max-width: 992px) {
+
+    .contact-container {
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .form-side,
+    .info-side {
+
+        max-width: 100%;
+
+        width: 100%;
+    }
+
+    .info-side {
+
+        margin-left: 0;
+    }
+
+}
+
+/* CARDS */
+.contact-card {
+
+    background: rgba(0, 0, 0, 0.85);
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.3);
+
+    color: white;
+}
+
+.form-side {
+    flex: 2;
+}
+
+.info-side {
+    flex: 1.2;
+    text-align: center;
+}
+
+/* TITULO */
+
+.contact-card h3 {
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+/* INPUTS */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 0.95rem;
+}
+
+.input-group input,
+.input-group textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #003366;
+
+    border: 1px solid #0055ff;
+
+    border-radius: 15px;
+
+    color: white;
+
+    box-shadow: inset 0 0 10px rgba(0, 85, 255, 0.5);
+
+    outline: none;
+}
+
+/* BOTON */
+
+.btn-send {
+
+    background: black;
+
+    color: white;
+
+    padding: 12px 40px;
+
+    border-radius: 25px;
+
+    border: 2px solid #0055ff;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(0, 85, 255, 0.6);
+
+    display: block;
+
+    margin: 20px auto 0;
+
+    transition: 0.3s;
+}
+
+.btn-send:hover {
+    background: #0055ff;
+}
+
+/* INFO */
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.info-item strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #ccc;
+}
+
+/* REDES */
+
+.social-icons-contact {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 15px;
+
+    flex-wrap: wrap;
+}
+
+.social-icons-contact img {
+    width: 30px;
+}
+
+/* =========================================
+   RESPONSIVE GLOBAL
+========================================= */
+
+@media (max-width: 992px) {
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .profile-card {
+        text-align: center;
+    }
+
+    .grid-textos {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .footer-copy-center {
+        position: static;
+        transform: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        line-height: 1.2;
+    }
+
+    .profile-img-container img {
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-perfil {
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .custom-btn {
+        width: 100%;
+    }
+
+    .contact-card {
+        padding: 25px;
+    }
+
+    .footer-logo img {
+        height: 90px;
+    }
+
+}
