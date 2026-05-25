@@ -7,14 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
 
-.texto-ligero {
-  font-weight: 200; /* Esto es lo que la hace delgada */
-}
 html,
 body {
     overflow-x: hidden;
@@ -184,7 +177,7 @@ img {
 /* TEXOS */
 
 .hero-content h1 {
-    font-family: 'Montserrat', sans-serif; /* Aplica la tipografía al título */
+    font-family: 'Montserrat', century gothic; /* Aplica la tipografía al título */
     font-size: clamp(2.4rem, 5vw, 4.5rem);
     line-height: 1.1;
     color: #fff;
