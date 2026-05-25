@@ -184,14 +184,16 @@ img {
 /* TEXOS */
 
 .hero-content h1 {
+    font-family: 'Montserrat', sans-serif; /* Aplica la tipografía al título */
     font-size: clamp(2.4rem, 5vw, 4.5rem);
     line-height: 1.1;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500; /* Peso normal/intermedio para "Innovación en software" */
 }
 
-.hero-content span {
-    font-weight: 300;
+.hero-content .texto-ligero {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200; /* Hace ultra delgada la frase "Para vehículos del futuro" */
     color: #fff;
 }
 
